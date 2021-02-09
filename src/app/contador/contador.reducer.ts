@@ -1,4 +1,4 @@
-import { ActionReducer, Action } from '@ngrx/store';
+import {  Action } from '@ngrx/store';
 
 export function contadorReducer(state: number = 10, action: Action){
 

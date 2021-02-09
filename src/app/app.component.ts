@@ -1,4 +1,9 @@
 import { Component } from '@angular/core';
+import {  Store } from '@ngrx/store';
+
+interface AppStore {
+  contador: number;
+}
 
 @Component({
   selector: 'app-root',
@@ -8,16 +13,16 @@ import { Component } from '@angular/core';
 export class AppComponent {
   contador: number;
 
-  constructor(){
-    this.contador = 10;
+  constructor( private store: Store<AppStore> ){
+    /* this.contador = 10; */
   }
 
   incrementar(){
-    this.contador ++;
+    /* this.contador ++; */
   }
 
   decrementar(){
-    this.contador --;
+    /* this.contador --; */
   }
 
 }
